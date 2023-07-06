@@ -103,12 +103,13 @@ hr {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   left: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(242, 240, 233, 0.1);
+  background-color: rgba(95, 83, 39, 0.1);
 }
 
 @media (min-width: 1600px) {
