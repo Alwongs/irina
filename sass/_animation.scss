@@ -1,0 +1,48 @@
+@media (min-width: $desktop-max) {
+    .element-animation {
+        opacity: 0;
+        transform: translateY(100px);
+        &.element-show {  
+            opacity: 1;
+            transform: translateY(0);
+            transition: 1s; 
+        } 
+    }
+    .element-show.section-main {
+        &__tags, &__img-london {
+            transition-delay: 0.2s;        
+        }
+        &__title, &__img-car-ledy {
+            transition-delay: 0.7s;
+        }
+        &__name {
+            transition-delay: 1s;
+        }    
+        &__description {
+            transition-delay: 1.2s;        
+        }
+    } 
+    .element-show.section-about {
+        &__title {
+            transition-delay: 0.2s;        
+        }
+        &__img-about, &__slogan {
+            transition-delay: 0.7s;        
+        }
+        &__description {
+            transition-delay: 1s;         
+        }
+        &__read-more {
+            transition-delay: 1.2s;        
+        }
+    }            
+}     
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+            
+}     
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {  
+
+}      
+@media (max-width: $mobile-max) {  
+        
+} 
