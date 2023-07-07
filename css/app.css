@@ -147,6 +147,17 @@ hr {
     transition-delay: 1.2s;
   }
 }
+@media (max-width: 1600px) {
+  .element-animation.section-main__tags {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  .element-animation.section-main__tags.element-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+  }
+}
 .section-main {
   text-transform: uppercase;
   position: relative;

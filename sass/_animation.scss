@@ -37,12 +37,15 @@
         }
     }            
 }     
-@media (min-width: $desktop-min) and (max-width: $desktop-max) {
-            
+@media (max-width: $desktop-max) {
+    .element-animation.section-main__tags {
+        opacity: 0;
+        transform: translateY(100px);
+        &.element-show {  
+            opacity: 1;
+            transform: translateY(0);
+            transition: 1s; 
+        } 
+    }            
 }     
-@media (min-width: $tablet-min) and (max-width: $tablet-max) {  
 
-}      
-@media (max-width: $mobile-max) {  
-        
-} 
